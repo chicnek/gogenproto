@@ -1,0 +1,2 @@
+# gogenproto
+golang generated protos
