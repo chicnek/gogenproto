@@ -13,6 +13,11 @@ plugins:
     out: .
     opt:
       - paths=source_relative
+      - grpc_api_configuration=ngwords/grpcapi.yaml
+  - name: openapiv2
+    out: .
+    opt:
+      - grpc_api_configuration=ngwords/grpcapi.yaml
   - name: validate
     out: .
     opt:

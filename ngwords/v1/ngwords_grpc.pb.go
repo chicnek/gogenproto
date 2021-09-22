@@ -4,7 +4,7 @@
 // - protoc             v3.17.3
 // source: ngwords/v1/ngwords.proto
 
-package ngwords_v1
+package ngwordsv1
 
 import (
 	context "context"
