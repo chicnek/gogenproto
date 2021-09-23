@@ -182,7 +182,13 @@
     "v1ValidateResponse": {
       "type": "object",
       "properties": {
-        "isOk": {
+        "ngWords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isPass": {
           "type": "boolean"
         }
       }

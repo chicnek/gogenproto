@@ -156,7 +156,7 @@ func (m *ValidateResponse) validate(all bool) error {
 
 	var errors []error
 
-	// no validation rules for IsOk
+	// no validation rules for IsPass
 
 	if len(errors) > 0 {
 		return ValidateResponseMultiError(errors)
