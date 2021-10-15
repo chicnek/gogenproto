@@ -13,11 +13,15 @@ plugins:
     out: .
     opt:
       - paths=source_relative
-      - grpc_api_configuration=ngwords/grpcapi.yaml
+      - grpc_api_configuration=notice/grpcapi.yaml
   - name: openapiv2
-    out: .
+    out: notice/v1
     opt:
-      - grpc_api_configuration=ngwords/grpcapi.yaml
+      - logtostderr=true
+      - allow_delete_body=true
+      - allow_merge=true
+      - json_names_for_fields=false
+      - grpc_api_configuration=notice/grpcapi.yaml
   - name: validate
     out: .
     opt:
