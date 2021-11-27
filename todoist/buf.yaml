@@ -2,8 +2,8 @@ version: v1
 name: buf.build/chicnek/apis
 deps:
   - buf.build/googleapis/googleapis
-  - buf.build/envoyproxy/protoc-gen-validate
-  - buf.build/grpc-ecosystem/grpc-gateway
+  # - buf.build/envoyproxy/protoc-gen-validate
+  # - buf.build/grpc-ecosystem/grpc-gateway
 lint:
   use:
     - BASIC

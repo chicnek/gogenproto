@@ -9,21 +9,21 @@ plugins:
     opt:
       - paths=source_relative
       - require_unimplemented_servers=false
-  - name: grpc-gateway
-    out: .
-    opt:
-      - paths=source_relative
-      - grpc_api_configuration=notice/grpcapi.yaml
-  - name: openapiv2
-    out: notice/v1
-    opt:
-      - logtostderr=true
-      - allow_delete_body=true
-      - allow_merge=true
-      - json_names_for_fields=false
-      - grpc_api_configuration=notice/grpcapi.yaml
-  - name: validate
-    out: .
-    opt:
-      - paths=source_relative
-      - lang=go
+  # - name: grpc-gateway
+  #   out: .
+  #   opt:
+  #     - paths=source_relative
+  #     - grpc_api_configuration=notice/grpcapi.yaml
+  # - name: openapiv2
+  #   out: notice/v1
+  #   opt:
+  #     - logtostderr=true
+  #     - allow_delete_body=true
+  #     - allow_merge=true
+  #     - json_names_for_fields=false
+  #     - grpc_api_configuration=notice/grpcapi.yaml
+  # - name: validate
+  #   out: .
+  #   opt:
+  #     - paths=source_relative
+  #     - lang=go
